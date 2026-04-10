@@ -30,8 +30,11 @@ app.use(cors());
 app.use('/api/v1/auth', require('./routes/auth'));
 app.use('/api/v1/tasks', require('./routes/tasks'));
 app.use('/api/v1/habits', require('./routes/habits'));
-// app.use('/api/v1/learning', require('./routes/learning'));
-// app.use('/api/v1/focus', require('./routes/focus'));
+app.use('/api/v1/learning', require('./routes/learning'));
+app.use('/api/v1/coding', require('./routes/coding'));
+app.use('/api/v1/health', require('./routes/health'));
+app.use('/api/v1/notifications', require('./routes/notifications'));
+app.use('/api/v1/focus', require('./routes/focus'));
 
 // Error handler
 app.use(errorHandler);

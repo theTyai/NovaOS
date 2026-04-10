@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      background: #000;
+      color: #fff;
+      font-family: sans-serif;
+      padding: 16px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 24px;
+      height: 24px;
+      background: #22c55e;
+      border-radius: 4px;
+    }
+    .btn {
+      width: 100%;
+      background: #22c55e;
+      color: #000;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .status {
+      font-size: 12px;
+      color: #444;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div className="header">
+    <div className="logo"></div>
+    <h2 style="margin:0">NovaOS</h2>
+  </div>
+  <p style="font-size:14px;color:#888">System tracking is active. Your coding logs are being synced.</p>
+  <button className="btn">Sync Now</button>
+  <div className="status">v1.0.0 | Online</div>
+</body>
+</html>
